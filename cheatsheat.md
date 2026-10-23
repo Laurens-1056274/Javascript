@@ -28,3 +28,43 @@ to comment multiple lines type ```/* */```
 ### document.getElementById(``).textContent = ""
 This grabs a specefic id from your html document and changes the textcontent
 for example ```document.getElementById(`myH1`).textContent = "hello"``` will get whatever element has the Id "myH1", and give it the text "hello"
+
+### variable
+A variable is a container that stores a value. (python example: ```x = 100```, then x is the variable containing the number 100)
+In javascript this would be:
+```
+let x;
+x = 100
+```
+(note, all variable names need to be unique, you can not have 2 times let x; in the same scope )
+
+If you want declaration and assignment in one line:
+```let x = 100; ```
+You use the former if you want user input/ dont know the value right away
+
+#### use variable in console.log
+beneath a example of how to use a variable in the console.log
+```
+let x = 100;
+console.log(`x = ${x}`)
+```
+
+### data types
+There are multiple datatypes. you can display them by using for example
+```console.log(typeof x)```
+The types are as followed
+    1. number (example: age = 25 (there are no floats in js, so 25.123 is also a number))
+    2. strings (example: name = "Eve")
+    3. booleans (true or false)
+
+### Intergate variables to html
+below a example of how to add the variables to the id of p1, p2, and p3
+```
+let fullName = "Eve Hill";
+let age = 22;
+let student = true;
+
+document.getElementById(`p1`).textContent = (`my name is ${fullName}`);
+document.getElementById(`p2`).textContent = (`I am ${age} years old`);
+document.getElementById(`p3`).textContent = (`I am a student = ${student}`);
+```
